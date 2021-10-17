@@ -8,7 +8,7 @@ pipeline {
 
         stage('Checkout') {
             steps{
-                git branch: 'main', url: 'git@github.com:fazil9975/jenkins-dockerhub.git'
+                git branch: 'main', url: 'git@github.com:Vakhob/jenkins-dockerhub.git'
             }
         }
 
@@ -32,7 +32,7 @@ pipeline {
 
         stage('Push') {
             steps {
-                sh 'docker push fazilat/devops14-docker:tagname'
+                sh 'docker push fazilat/devops14-docker:version2'
             }
         }
     }
